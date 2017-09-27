@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+<br />
+<input id="a1" name="a1" type="text" />
+<input id="b1" name="b1" type="text" />
+<input id="c1" name="c1" type="button"  value="add" onclick='javascript: document.getElementById("d1").value = document.getElementById("a1").value + document.getElementById("b1").value'  />
+<input id="d1" name="d1" type="text" />
+
+<address>
+    One Microsoft Way<br />
+    Redmond, WA 98052-6399 VINOD<br />
+    <abbr title="Phone">P:</abbr>
+    425.555.0100
+</address>
+
+<address>
+    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
+    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+</address>
