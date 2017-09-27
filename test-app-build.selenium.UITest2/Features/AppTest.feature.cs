@@ -109,7 +109,7 @@ this.ScenarioSetup(scenarioInfo);
 #line 20
  testRunner.When("I press add button  of about screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 21
- testRunner.Then("the result should be 10070 on the third text box of the about screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("the result should be 10071 on the third text box of the about screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 22
  testRunner.When("I click on contact link on top menu", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 23
