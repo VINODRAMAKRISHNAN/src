@@ -18,7 +18,7 @@ Scenario: Add two numbers in about page and then navigate to contact page
 	And I entered 100 into the first text box of the about screen
 	And Then I have entered 70 into the second text box of the about screen
 	When I press add button  of about screen
-	Then the result should be 10071 on the third text box of the about screen
+	Then the result should be 10070 on the third text box of the about screen
 	When I click on contact link on top menu 
 	Then I can see the contact screen
 
