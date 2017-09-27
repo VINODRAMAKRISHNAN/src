@@ -62,11 +62,18 @@ namespace test_app_build.Tests.Controllers
         [Test]
         public void TestSOPURLXML()
         {
-            RunSoapUItest("TestSuite 1", "TestCase 2");
+            string testSuiteName = "TestSuite 1";
+            string testCaseName = "TestCase 2";
+            string errorMessage = RunSoapUItest(testSuiteName, testCaseName);
+            //fail the test if anything fails
+            if (!string.IsNullOrEmpty(errorMessage))
+            {
+                Assert.Fail("Test with name '{0}' failed. {1} {2}", testCaseName, Environment.NewLine, errorMessage);
+            }
         }
 
 
-        private void RunSoapUItest(string testSuiteName, string testCaseName)
+        private string RunSoapUItest(string testSuiteName, string testCaseName)
         {
             var errorBuilder = new StringBuilder();
 
@@ -160,11 +167,7 @@ namespace test_app_build.Tests.Controllers
             }
             errorfound = false;
             errorMessage = errorBuilder.ToString();
-            //fail the test if anything fails
-            if (!string.IsNullOrEmpty(errorMessage))
-            {
-                Assert.Fail("Test with name '{0}' failed. {1} {2}", testCaseName, Environment.NewLine, errorMessage);
-            }
+            return errorMessage;
         }
 
     }
