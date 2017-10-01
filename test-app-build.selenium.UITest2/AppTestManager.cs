@@ -62,6 +62,7 @@ namespace test_app_build.selenium.UITest2
             IWebElement eleLink = driver.FindElement(By.LinkText("About"));
             eleLink.Click();
         }
+      
         public void ValidateThirdTextBox(int ip3)
         {
             try
@@ -100,7 +101,7 @@ namespace test_app_build.selenium.UITest2
             IWebElement ele3 = driver.FindElement(By.Id("c2"));
             ele3.Click();
         }
-        public void ClickAboutLinkAbout()
+        public void ClickContactLink()
         {
             IWebElement eleLink = driver.FindElement(By.LinkText("Contact"));
             eleLink.Click();
