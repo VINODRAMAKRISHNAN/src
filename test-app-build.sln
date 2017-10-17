@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test-app-build.selenium.UIT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test-app-build.readyapi.tests", "test-app-build.readyapi.tests\test-app-build.readyapi.tests.csproj", "{9C70469D-BD3C-4867-91BB-0AFEA964F78F}"
 EndProject
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "test-app-build.Azure", "test-app-build.Azure\test-app-build.Azure.ccproj", "{397C8C43-B9E4-4B37-9A73-5771E0CA0478}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,32 +41,15 @@ Global
 		{9C70469D-BD3C-4867-91BB-0AFEA964F78F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C70469D-BD3C-4867-91BB-0AFEA964F78F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C70469D-BD3C-4867-91BB-0AFEA964F78F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{397C8C43-B9E4-4B37-9A73-5771E0CA0478}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{397C8C43-B9E4-4B37-9A73-5771E0CA0478}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{397C8C43-B9E4-4B37-9A73-5771E0CA0478}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{397C8C43-B9E4-4B37-9A73-5771E0CA0478}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D8BAA362-3262-479D-B6EC-D4AC69E14CF6}
-	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 6
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://vinodtesttfs.visualstudio.com/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = test-app-build.Tests\\test-app-build.Tests.csproj
-		SccProjectName1 = test-app-build.Tests
-		SccLocalPath1 = test-app-build.Tests
-		SccProjectUniqueName2 = test-app-build\\test-app-build.csproj
-		SccProjectName2 = test-app-build
-		SccLocalPath2 = test-app-build
-		SccProjectUniqueName3 = SpecFlowNUT\\SpecFlowNUT.csproj
-		SccProjectName3 = SpecFlowNUT
-		SccLocalPath3 = SpecFlowNUT
-		SccProjectUniqueName4 = test-app-build.selenium.UITest2\\test-app-build.selenium.UITest2.csproj
-		SccProjectName4 = test-app-build.selenium.UITest2
-		SccLocalPath4 = test-app-build.selenium.UITest2
-		SccProjectUniqueName5 = test-app-build.readyapi.tests\\test-app-build.readyapi.tests.csproj
-		SccProjectName5 = test-app-build.readyapi.tests
-		SccLocalPath5 = test-app-build.readyapi.tests
 	EndGlobalSection
 EndGlobal

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="test_app_build.Azure" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="5" osVersion="*" schemaVersion="2015-04.2.6">
+  <Role name="test-app-build">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="vinod" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEG8KbLQofFWMS+sWOmw615AwDQYJKoZIhvcNAQEBBQAEggEADTdcVxe5+hnhdq2CHOz+QJBU2EEhCk4/AmeU57rhQCYk6nLDfNE8bTeZFIgRNV3T+tXEOkxg3sNj0dfxeRcv0cx3F3PcUhUWUCJWp2Sm/QFuyEx2DVN3HcocZnp/0ocEgwqu1XjCsURS866hmCfzn+kheXZnnW+ZN5sEDfCd13aXdKhIvOz2IQiCD6PpRIbW10GXVSm6o1Plf/ozcDC/em1moghRrGKs1/7Ia6LisIn2grOApJTwyFARxiYzEtZrnsUo6BSj7TJ5Nh78BniWm+RYokh65bfiQfJ/6V9lYKlV4qJbz7BcvTRXuG3L6UDpm8rUY/fWlgm5q5ggxmcYbzAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECGyse/hLzS9cgBCjZY/Bd1KXeXuF2/LGTd+e" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2018-10-16T23:59:59.0000000-05:00" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="504692AB24CB6BFAEFF40A2390746DB4C8479B8A" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>
